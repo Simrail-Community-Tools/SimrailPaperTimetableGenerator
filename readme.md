@@ -15,4 +15,4 @@ The idea is to use the open API to get all the timetables, generate a hash and t
 
 ## Special thanks
 Thanks to all our contributers aswell as:<br>
-Coldy - [Paper timetable creation tool for singleplayer made in excel](https://cdn.discordapp.com/attachments/1071796387781562378/1418301642289451100/Simrail_Timetable_Template_For_Custom_Scenarios_by_Coldy.xlsx?ex=6a3a2696&is=6a38d516&hm=ab359bd6317e3d3ec7b73d926c3ed59e0c284386e8ee73e7206ee4dd33155fdc&)
+Coldy - [Paper timetable creation tool for singleplayer made in excel](https://cdn.discordapp.com/attachments/1071796387781562378/1418301642289451100/Simrail_Timetable_Template_For_Custom_Scenarios_by_Coldy.xlsx?ex=6a3a2696&is=6a38d516&hm=ab359bd6317e3d3ec7b73d926c3ed59e0c284386e8ee73e7206ee4dd33155fdc&) used as insperation
