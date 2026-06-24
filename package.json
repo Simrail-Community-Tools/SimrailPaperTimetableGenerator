@@ -1,0 +1,30 @@
+{
+  "name": "simrailpapertimetablegenerator",
+  "version": "1.0.0",
+  "description": "This is a tool that automatically generates paper timetables for the game simrail based on the multiplayer timetables. Paper timetables automatically get pushed to the Simrail paper timetables repo. Plans for the future are to add a function to generate custom timetables for use in singleplayer scenarios aswell.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "@types/node-fetch": "^2.6.13",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^10.5.0",
+    "prettier": "^3.8.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@types/create-hash": "^1.2.6",
+    "node-fetch": "^2.6.7",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "SkipHashMatching": true,
+    "LocalTrainData": false,
+    "GenerateAllTrains": true,
+    "Trains": [
+        "1301",
+        "11601"
+    ]
+}
