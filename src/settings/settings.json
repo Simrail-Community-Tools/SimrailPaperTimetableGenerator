@@ -1,5 +1,5 @@
 {
-    "SkipHashMatching": true,
+    "SkipHashMatching": false,
     "LocalTrainData": false,
     "GenerateAllTrains": true,
     "Trains": [
