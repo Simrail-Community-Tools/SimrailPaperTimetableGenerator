@@ -8,7 +8,7 @@ Whilst we acknowledge that there are other paper timetable tools some even used 
 Change the json file in the input foler and set settings to use local timetable data.
 
 ## Affiliation
-Please not we are not affiliated with Simrail, Simkol or Playway. This project is a community project made to improve the game for players.
+Please note we are not affiliated with Simrail, Simkol or Playway. This project is a community project made to improve the game for players.
 
 ## How it works
 The idea is to use the open API to get all the timetables, generate a hash and timetables based on the data. With this generated hash we can regenerate a hash every x hours and compare it to see if the timetables has changed. If the timetables have changed we regenerate them and save this new hash. This would all be maintained trough github actions to ensure the project is working long-term.
