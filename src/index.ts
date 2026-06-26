@@ -87,6 +87,7 @@ async function Main() {
         }
 
         for (const entry of outputfiles) {
+            if (entry == "index.html") continue;
             if (!trainsFoundInRunFiles.includes(entry)) {
                 console.log(`${entry} has not been seen in the latest 5 runs, deleting!`)
                 fs.rmSync(`${outputPath}/${entry}`, { recursive: true, force: true });
