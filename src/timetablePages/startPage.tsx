@@ -2,7 +2,7 @@ import { TrainTimetable } from "../timetableTypes";
 
 function TimetableStartPage({ timetable }: {timetable: TrainTimetable }) {
   return (
-    <html lang="en">
+    <html lang="en" style={{ width: "595px", height: "842px", margin: 0 }}>
       <head>
         <meta charSet="utf-8" />
         <title>{`${timetable.trainNoLocal} - Page 1`}</title>

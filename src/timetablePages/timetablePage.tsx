@@ -9,7 +9,7 @@ function TimetablePage({ timetable, pageNumber }: {timetable: TrainTimetable, pa
     trainNoInternationalString = `(${timetable.trainNoInternational})`
 
   return (
-    <html lang="en">
+    <html lang="en" style={{ width: "595px", height: "842px", margin: 0 }}>
       <head>
         <meta charSet="utf-8" />
         <title>{`${timetable.trainNoLocal} - Page ${pageNumber}`}</title>
