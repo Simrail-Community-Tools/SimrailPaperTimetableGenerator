@@ -7,6 +7,7 @@ import React from "react";
 import { TimetableStartPage } from "./timetablePages/startPage";
 import { TrainCompositionPage } from "./timetablePages/trainCompositionPage";
 import { TimetablePage } from "./timetablePages/timetablePage";
+import { WrittenWarningsPage } from "./timetablePages/writtenWarningsPage";
 
 /*
   This file should really be cleaned up.
@@ -34,6 +35,14 @@ async function GeneratedTrainCompositionPage(OutputPath: string, Timetable: Trai
   await fs.promises.writeFile(`${OutputPath}/${PageIndex}.html`, htmlDoc);
 }
 
+async function GeneratedWrittenWarningsPage(OutputPath: string, Timetable: TrainTimetable, PageIndex: number) {
+  let html;
+  html = ReactDOMServer.renderToStaticMarkup(<WrittenWarningsPage timetable={Timetable} />)
+  let htmlDoc = "<!DOCTYPE html>" + html;
+
+  await fs.promises.writeFile(`${OutputPath}/${PageIndex}.html`, htmlDoc);
+}
+
 function GenerateTimetablePages(Data: TrainTimetable[]) {
   const outputPath = "./output";
   fs.mkdirSync(outputPath, { recursive: true });
@@ -49,6 +58,7 @@ function GenerateTimetablePages(Data: TrainTimetable[]) {
     GenerateTimetablePage(thisTrainsOutputPath, train, 4);
     GenerateTimetablePage(thisTrainsOutputPath, train, 5);
     GeneratedTrainCompositionPage(thisTrainsOutputPath, train, 6);
+    GeneratedWrittenWarningsPage(thisTrainsOutputPath, train, 7);
 
     i++;
     console.log(`Generated ${i}/${Data.length}`);
