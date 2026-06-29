@@ -57,7 +57,7 @@ function TrainCompositionPage({ timetable, pageNumber }: {timetable: TrainTimeta
     }
 
   return (
-    <html lang="en" style={{ width: "595px", height: "842px", margin: 0 }}>
+    <html lang="en">
       <head>
         <meta charSet="utf-8" />
         <title>{`${timetable.trainNoLocal} - Page ${pageNumber}`}</title>
